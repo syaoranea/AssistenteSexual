@@ -1,0 +1,115 @@
+.all-wrapper{
+    box-sizing: border-box ;
+    position: fixed;
+    font-family: Nunito;
+    font-size: 14px;
+    font-weight: 400;
+    color: #c9c9c9;
+    width: 100%;
+    z-index: 9999;
+    .menu-block{
+        background-color: #151515;
+        border-bottom: 1px solid #414141;
+        max-height: 67px !important;
+        .menu-inner-w{
+            height: auto;
+            margin: 0 auto;
+            max-width: 1470px;
+            min-width: 990px;
+            position: relative;
+            width: 100%;
+            display: flex;
+            .logo{
+                a{
+                    color: #111;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 34px;
+                    text-decoration: none;
+                }
+                
+                margin-right: 30px;
+                margin-bottom: 0px;
+                padding-left: 40px;
+                img{
+                
+                width: 60px;
+                }
+            }
+            .menu{
+                display: flex;
+                list-style: none;
+                li a{
+                    font-family: Nunito-Regular;
+                    color: #d2d2d2;
+                    outline: none;
+                    text-shadow: none;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 22px;
+                    padding: 18px 15px;
+                    letter-spacing: 1px;
+                }
+                ul{
+                    display: none;
+                    position: absolute;
+                    list-style: none;
+                    width: 220px;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #333;
+                }
+                li {
+                    &:hover ul {
+                        display: block;
+                    }
+                }
+                ul li a{
+                    display: block;
+                    font-size: 18px;
+                    &:hover{
+                    background-color: #151515;
+                    }
+                }
+        
+                    
+
+            }
+            .tnp-subscription {
+                margin-left: 20px;
+                max-width: 500px;
+                display: block;
+                margin-top: 10px;
+                form{
+                    .tnp-field-email {
+                        text-align: center;
+                    }
+                    td,th{
+                        border: 0px solid #1d1d1d;
+                        text-align: left;
+                        padding: 5px;
+                        color: #efefef;
+                    }
+                    .tnp-email{
+                        width: 240px;
+                        height: 18px;
+                        color: #fff;
+                        background-color: #2f2f2f;
+                        padding: 18px;
+                        border: none;
+                    }
+                    .tnp-submit{
+                        background-color: #464646;
+                        height: 38px;
+                        color: #fff;
+                        margin-top: 2px;
+                        font-size: 14px;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+        
+    }
+        
+}
