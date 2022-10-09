@@ -230,13 +230,9 @@ overflow .#{$helper-prefix}overflow-scroll {
 
 // -> spacing
 
-.#{$helper-prefix}ms-auto {
-    margin-right: auto !important;
-}
+.#{$helper-prefix}ms-auto { margin-right: auto !important;}
 
-.#{$helper-prefix}me-auto {
-    margin-left: auto !important;
-}
+.#{$helper-prefix}me-auto { margin-left: auto !important;}
 
 .#{$helper-prefix}mx-auto {
     margin-right: auto !important;
@@ -374,13 +370,9 @@ overflow .#{$helper-prefix}overflow-scroll {
     flex-direction: column-reverse !important;
 }
 
-.#{$helper-prefix}justify-con-start {
-    justify-content: flex-start !important;
-}
+.#{$helper-prefix}justify-con-start {justify-content: flex-start !important;}
 
-.#{$helper-prefix}justify--con-end {
-    justify-content: flex-end !important;
-}
+.#{$helper-prefix}justify--con-end {justify-content: flex-end !important;}
 
 .#{$helper-prefix}justify-con-ini {
     justify-content: initial !important;

@@ -1,0 +1,31 @@
+.mais-lidas{
+    width: 90%;
+    font-family: Nunito-Regular;
+    border: 1px solid #3c3c3c;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 5%);
+    border-radius: 4px;
+    margin-left: 2rem;
+    section{
+        border-top: 1px solid #3c3c3c;
+        padding: 24px 0;
+    }
+    ol{
+        list-style-position: inside;
+        padding: 0 24px;
+        li::marker{
+            color: rgb(233, 233, 233);
+            width: 12px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+    .title{
+        border-bottom: 1px solid #3c3c3c;
+        padding-left: 24px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    a{
+        text-decoration: none;
+    }
+}
