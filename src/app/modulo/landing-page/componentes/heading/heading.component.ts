@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { StateService } from '@uirouter/angular';
 
 @Component({
   selector: 'app-heading',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeadingComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private stateService: StateService
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  goToCuidadores(){
+    console.log('entrou2');
+    this.stateService.go('noticias', {}, {location: false});
   }
 
 }

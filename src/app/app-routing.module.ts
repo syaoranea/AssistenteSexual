@@ -1,6 +1,7 @@
-import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
+import { LocationStrategy } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { UIRouterModule } from '@uirouter/angular'
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   imports: [UIRouterModule.forRoot()],
@@ -8,7 +9,7 @@ import { UIRouterModule } from '@uirouter/angular'
     Location,
     {
       provide: LocationStrategy,
-      useClass: PathLocationStrategy 
+      useClass: environment.locationStrategy, 
     }
   ],
   exports:[UIRouterModule]
