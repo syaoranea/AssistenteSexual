@@ -7,18 +7,22 @@
     color: #c9c9c9;
     width: 100%;
     z-index: 9999;
+  
+
     .menu-block{
         background-color: #151515;
         border-bottom: 1px solid #414141;
         max-height: 67px !important;
+       
         .menu-inner-w{
             height: auto;
             margin: 0 auto;
-            max-width: 1470px;
-            min-width: 990px;
+            max-width: 1460px;
             position: relative;
             width: 100%;
             display: flex;
+            justify-content: space-between!important;
+            
             .logo{
                 a{
                     color: #111;
@@ -113,3 +117,117 @@
     }
         
 }
+
+nav {
+  
+    color: #fff;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  ul li {
+    margin: 0 10px;
+    position: relative;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    padding: 10px;
+    top: 100%;
+    left: 0;
+    width: 200px;
+  }
+  
+  ul li:hover ul {
+    display: block;
+  }
+  
+  ul li ul li {
+    margin: 5px 0;
+  }
+  
+  ul li:hover > a {
+    color: #f1c40f; /* Cor do link no hover */
+  }
+  
+  ul li:hover ul li a {
+    color: #fff;
+  }
+
+  .menu-icon {
+    display: none; /* Esconde o ícone de hambúrguer em telas maiores */
+    cursor: pointer;
+    font-size: 42px;
+  }
+  
+  @media (max-width: 968px) {
+    .menu-icon {
+      display: block;
+    }
+    
+
+    .open{
+        display: block!important;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #2f2f2f;
+        position: absolute;
+        left: 0;
+        margin-top: 66px;
+        height: 100vh;
+        text-align: center;
+        ul{
+            display: none!important;
+            flex-direction: column;
+            width: 100%!important;
+            margin-right: 90px;
+            padding: 0;
+            background-color: #333;
+        }
+        li {         
+            &:hover ul {
+                display: none!important;
+            }
+        }
+    }
+    
+    ul {
+        display: none!important;
+    }
+
+    .tnp-subscription{
+        display: none!important;
+    }
+
+    .menu-inner-w{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 20px;
+    }
+    
+
+    ul li a{
+        font-size: 18px;
+        width: 100%;
+        &:hover{
+        background-color: #151515;
+        }
+    }
+
+
+  }

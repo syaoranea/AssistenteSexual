@@ -1,9 +1,12 @@
 .app {
     width: 1460px;
     margin: 0 auto;
+    
 }
 
 .content{
+    display: flex;
+   justify-content: space-between;
     margin-top: 32px;
 }
 

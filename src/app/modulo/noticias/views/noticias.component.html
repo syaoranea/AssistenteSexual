@@ -1,1 +1,6 @@
-<p>noticias works! do amanha</p>
+<div class="news-detail-container">
+    <h2>{{ new.title }}</h2>
+    <h3>{{ new.subtitle }}</h3>
+    <img [src]="new.imageURL" alt="{{ new.title }}" class="news-image">
+    <p>{{ new.description }}</p>
+</div>

@@ -1,9 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
-@import 'app/shared/utils/color.scss';
-@import 'app/shared/utils/helper.scss';
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+h2 {
+    font-family: Nunito-Regular;
+    font-size: 32px;
+    color: rgb(229 231 235);
+    font-weight: 700;
+}
+
+.text{
+--tw-text-opacity: 1;
+color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+.text-sm {
+font-size: .875rem;
+line-height: 1.25rem;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+/* Importing Datepicker SCSS file. */
+@import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";

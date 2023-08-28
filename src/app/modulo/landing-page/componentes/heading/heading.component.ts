@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { StateService } from '@uirouter/angular';
+
 
 @Component({
   selector: 'app-heading',
@@ -7,17 +7,16 @@ import { StateService } from '@uirouter/angular';
   styleUrls: ['./heading.component.scss']
 })
 export class HeadingComponent implements OnInit {
+  isMenuOpen = false;
 
-  constructor(
-    private stateService: StateService
-  ) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
 
-  goToCuidadores(){
-    console.log('entrou2');
-    this.stateService.go('noticias', {}, {location: false});
+  toggleMenu() {
+    console.log('toggleMenu');
+    this.isMenuOpen = !this.isMenuOpen;
   }
 
 }

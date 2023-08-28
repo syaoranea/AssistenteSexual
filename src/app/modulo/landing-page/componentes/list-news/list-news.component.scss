@@ -1,5 +1,7 @@
 .ultimas-noticias{
-    width: 1100px;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
     img{
         max-width: 300px;
         width: 100%;
@@ -22,5 +24,26 @@
         border-bottom: 1px solid #3c3c3c;
         margin-top: 32px;
         padding-bottom: 32px;
+    }
+    .carde {
+        display: flex;
+        &:hover{
+            cursor: pointer;
+            img{
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .color-category{
+        color: #f58623;
+        &:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
+    .paginador {
+        color: #fff;
     }
 }
